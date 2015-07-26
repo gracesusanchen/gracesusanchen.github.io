@@ -2,12 +2,12 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+url: http://
+title: Grace S. Chen
+subtitle: 
+author: Grace Chen
 simple_search: https://www.google.com/search
-description:
+description: This is where I write in full sentences. Visit my github for where I write in code.
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
