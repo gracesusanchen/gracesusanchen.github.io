@@ -2,7 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://
+url: http://gracesusanchen.github.io
 title: Grace S. Chen
 subtitle: 
 author: Grace Chen
@@ -99,3 +99,5 @@ google_analytics_tracking_id:
 
 # Facebook Like
 facebook_like: false
+
+highlight_js_color_theme: 

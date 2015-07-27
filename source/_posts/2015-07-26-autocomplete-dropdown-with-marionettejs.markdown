@@ -8,6 +8,8 @@ categories: [tutorial,marionette,autocomplete]
 
 Marionette is a Backbone.js library which includes a number of useful extended views. In this article, I will use Marionette.CollectionView to build an autocomplete dropdown menu with rich user interactions.
 
+<!-- More -->
+
 **Note**: For more information on Marionette, I recommend starting with Ben McCormick's excellent introduction [here](http://benmccormick.org/2014/12/02/the-case-for-marionette-js/).
 
 ## Why use Marionette?
