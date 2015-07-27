@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: marionette | Grace S. Chen]]></title>
-  <link href="http://gracesusanchen.github.io//blog/categories/marionette/atom.xml" rel="self"/>
-  <link href="http://gracesusanchen.github.io//"/>
-  <updated>2015-07-27T23:34:16+08:00</updated>
-  <id>http://gracesusanchen.github.io//</id>
+  <link href="http://gracesusanchen.github.io/blog/categories/marionette/atom.xml" rel="self"/>
+  <link href="http://gracesusanchen.github.io/"/>
+  <updated>2015-07-27T23:37:27+08:00</updated>
+  <id>http://gracesusanchen.github.io/</id>
   <author>
     <name><![CDATA[Grace Chen]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Autocomplete dropdown with MarionetteJS]]></title>
-    <link href="http://gracesusanchen.github.io//blog/2015/06/24/autocomplete-dropdown-with-marionettejs/"/>
+    <link href="http://gracesusanchen.github.io/blog/2015/06/24/autocomplete-dropdown-with-marionettejs/"/>
     <updated>2015-06-24T21:27:37+08:00</updated>
-    <id>http://gracesusanchen.github.io//blog/2015/06/24/autocomplete-dropdown-with-marionettejs</id>
+    <id>http://gracesusanchen.github.io/blog/2015/06/24/autocomplete-dropdown-with-marionettejs</id>
     <content type="html"><![CDATA[<p>Marionette is a Backbone.js library which includes a number of useful extended views. In this article, I will use Marionette.CollectionView to build an autocomplete dropdown menu with rich user interactions.</p>
 
 <!-- More -->
@@ -43,7 +43,7 @@
 
 <h2>Working Example</h2>
 
-<p><img src="http://gracesusanchen.github.io//images/201506autocomplete.png" width="600"></p>
+<p><img src="http://gracesusanchen.github.io/images/201506autocomplete.png" width="600"></p>
 
 <p>Play around with it <a href="http://plnkr.co/9SX5OphViYSE1txQbEFR">here</a>.</p>
 
