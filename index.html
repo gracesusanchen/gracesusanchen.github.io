@@ -46,6 +46,42 @@
 		
 	
 	<header class="post-header">
+		<span class="post-meta">25 Jul 2015</span>
+		<h2 class="post-title">
+			
+			<a href="/blog/2015/07/25/adding-separators-to-maionette-collectionviews/">
+			
+				Adding Separators to a Collection Using Marionette</a>
+		</h2>
+	</header>
+	<section class="post-excerpt">
+		<p>The Marionette library provides a clear lifecycle and triggers for each view types. In this article, I will demonstrate how to take advantage of this cycle to add separators to a rendered collection.</p>
+
+<h2>The Goal</h2>
+
+<p><img src="/images/201506autocomplete.png" width="600"></p>
+
+<p>Play around with it <a href="">here</a>.</p>
+
+<h2>Understanding the CollectionView Lifecycle</h2>
+
+<p>The marionette collection view has a buffering mechanism which minimizes the number of times we insert to the DOM. This means that in order to</p>
+
+<p>NOTE: Here is a <a href="http://benmccormick.org/2015/01/05/marionette-view-life-cycles/">far more detailed overview</a> of Marionette View&rsquo;s lifecycle.</p>
+
+<p>This way, we do not have to override the existing <code>attachHTML</code> method.</p>
+
+<p>this way, our separator will re-render on filter!</p>
+
+	</section>
+
+    </article>
+
+  
+    <article class="post">
+      
+	
+	<header class="post-header">
 		<span class="post-meta">24 Jun 2015</span>
 		<h2 class="post-title">
 			
@@ -141,7 +177,7 @@
 
 
   </main>
-  <footer class="site-footer"><a class="subscribe icon-feed" href="http:///atom.xml"><span class="tooltip">Subscribe!</span></a>
+  <footer class="site-footer"><a class="subscribe icon-feed" href="http://gracesusanchen.github.io//atom.xml"><span class="tooltip">Subscribe!</span></a>
 
 
 <div class="inner">
@@ -154,9 +190,9 @@
 
 
 
-<section class="copyright">All content copyright <a href="/">Grace Chen</a> © 2015 • All rights reserved.</section>
+<section class="copyright">All content copyright <a href="/">Grace Chen</a> © 2015 • All rights reserved • Photo credit: <a href="https://ello.co/kappuru">@kapurru</a></section>
 
-<section class="poweredby">Casper theme by <a class="icon-ghost" href="http://tryghost.org">Ghost</a> &amp; Published with <a href="http://octopress.org">Octopress</a></section>
+<section class="poweredby">Casper theme by <a class="icon-ghost" href="http://tryghost.org">Ghost</a> &amp; Published with <a href="http://octopress.org">Octopress</a>.</section>
 
 </div>
 </footer>

@@ -1,28 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http:///blog/2015/06/24/autocomplete-dropdown-with-marionettejs/</loc>
+    <loc>http://gracesusanchen.github.io//blog/2015/07/25/adding-separators-to-maionette-collectionviews/</loc>
+    <lastmod>2015-07-25T11:21:05+08:00</lastmod>
+  </url>
+  <url>
+    <loc>http://gracesusanchen.github.io//blog/2015/06/24/autocomplete-dropdown-with-marionettejs/</loc>
     <lastmod>2015-06-24T21:27:37+08:00</lastmod>
   </url>
   <url>
-    <loc>http:///</loc>
+    <loc>http://gracesusanchen.github.io//</loc>
   </url>
   <url>
-    <loc>http:///archives/</loc>
+    <loc>http://gracesusanchen.github.io//archives/</loc>
   </url>
   <url>
-    <loc>http:///blog/</loc>
+    <loc>http://gracesusanchen.github.io//blog/</loc>
   </url>
   <url>
-    <loc>http:///blog/archives/</loc>
+    <loc>http://gracesusanchen.github.io//blog/archives/</loc>
   </url>
   <url>
-    <loc>http:///blog/categories/tutorial/</loc>
+    <loc>http://gracesusanchen.github.io//blog/categories/tutorial/</loc>
   </url>
   <url>
-    <loc>http:///blog/categories/marionette/</loc>
+    <loc>http://gracesusanchen.github.io//blog/categories/marionette/</loc>
   </url>
   <url>
-    <loc>http:///blog/categories/autocomplete/</loc>
+    <loc>http://gracesusanchen.github.io//blog/categories/autocomplete/</loc>
   </url>
 </urlset>
