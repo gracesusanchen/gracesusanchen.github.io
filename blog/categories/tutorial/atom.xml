@@ -4,7 +4,7 @@
   <title><![CDATA[Category: tutorial | Grace S. Chen]]></title>
   <link href="http://gracesusanchen.github.io//blog/categories/tutorial/atom.xml" rel="self"/>
   <link href="http://gracesusanchen.github.io//"/>
-  <updated>2015-07-27T23:31:12+08:00</updated>
+  <updated>2015-07-27T23:34:16+08:00</updated>
   <id>http://gracesusanchen.github.io//</id>
   <author>
     <name><![CDATA[Grace Chen]]></name>
@@ -19,6 +19,9 @@
     <updated>2015-06-24T21:27:37+08:00</updated>
     <id>http://gracesusanchen.github.io//blog/2015/06/24/autocomplete-dropdown-with-marionettejs</id>
     <content type="html"><![CDATA[<p>Marionette is a Backbone.js library which includes a number of useful extended views. In this article, I will use Marionette.CollectionView to build an autocomplete dropdown menu with rich user interactions.</p>
+
+<!-- More -->
+
 
 <p><strong>Note</strong>: For more information on Marionette, I recommend starting with Ben McCormick&rsquo;s excellent introduction <a href="http://benmccormick.org/2014/12/02/the-case-for-marionette-js/">here</a>.</p>
 

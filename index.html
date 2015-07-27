@@ -46,42 +46,6 @@
 		
 	
 	<header class="post-header">
-		<span class="post-meta">25 Jul 2015</span>
-		<h2 class="post-title">
-			
-			<a href="/blog/2015/07/25/adding-separators-to-maionette-collectionviews/">
-			
-				Adding Separators to a Collection Using Marionette</a>
-		</h2>
-	</header>
-	<section class="post-excerpt">
-		<p>The Marionette library provides a clear lifecycle and triggers for each view types. In this article, I will demonstrate how to take advantage of this cycle to add separators to a rendered collection.</p>
-
-<h2>The Goal</h2>
-
-<p><img src="/images/201506autocomplete.png" width="600"></p>
-
-<p>Play around with it <a href="">here</a>.</p>
-
-<h2>Understanding the CollectionView Lifecycle</h2>
-
-<p>The marionette collection view has a buffering mechanism which minimizes the number of times we insert to the DOM. This means that in order to</p>
-
-<p>NOTE: Here is a <a href="http://benmccormick.org/2015/01/05/marionette-view-life-cycles/">far more detailed overview</a> of Marionette View&rsquo;s lifecycle.</p>
-
-<p>This way, we do not have to override the existing <code>attachHTML</code> method.</p>
-
-<p>this way, our separator will re-render on filter!</p>
-
-	</section>
-
-    </article>
-
-  
-    <article class="post">
-      
-	
-	<header class="post-header">
 		<span class="post-meta">24 Jun 2015</span>
 		<h2 class="post-title">
 			
@@ -93,72 +57,6 @@
 	<section class="post-excerpt">
 		<p>Marionette is a Backbone.js library which includes a number of useful extended views. In this article, I will use Marionette.CollectionView to build an autocomplete dropdown menu with rich user interactions.</p>
 
-<p><strong>Note</strong>: For more information on Marionette, I recommend starting with Ben McCormick&rsquo;s excellent introduction <a href="http://benmccormick.org/2014/12/02/the-case-for-marionette-js/">here</a>.</p>
-
-<h2>Why use Marionette?</h2>
-
-<p>There are several existing solutions for the autocomplete functionionality, such as <a href="https://jqueryui.com/autocomplete/">jQuery UI autocomplete</a>, and <a href="https://twitter.github.io/typeahead.js/">typeahead</a>. In particular, typeahead is both powerful and flexible. However, I have chosen Backbone.Marionette for the gentler learning curve.</p>
-
-<p>Our autocomplete implemented with Marionette comes with the following features:</p>
-
-<ol>
-<li><p><strong>Datasource changes with user input.</strong></p>
-
-<p>CollectionView can use any collection as the data source, and automatically listens to <code>add</code> and <code>destroy</code> events.</p></li>
-<li><p><strong>Complex UI interaction within the dropdown menu.</strong></p>
-
-<p>Use event hashes like you would in any other Backbone.Views.</p></li>
-</ol>
-
-
-<h2>Working Example</h2>
-
-<p><img src="/images/201506autocomplete.png" width="600"></p>
-
-<p>Play around with it <a href="http://plnkr.co/9SX5OphViYSE1txQbEFR">here</a>.</p>
-
-<h2>Walkthrough</h2>
-
-<p>Let&rsquo;s divide our autocomplete into two sections:</p>
-
-<ul>
-<li>The input, which is controlled by a Backbone View.</li>
-<li>The dropdown menu, which is controlled by a CollectionView.</li>
-</ul>
-
-
-<p>When a keyword is typed into the input, the dropdown menu is filtered. The key part of our implementation is this <a href="http://marionettejs.com/docs/marionette.collectionview.html#collectionviews-filter">filter method</a>.</p>
-
-<h3>Filter Behavior</h3>
-
-<p>I have separated the filter logic into a Marionette.Behavior, as shown below:</p>
-
-<script src="https://gist.github.com/gracesusanchen/f6640993d2cc171f7230.js?file=FilterBehavior.js"></script>
-
-
-<p>Notice we have instantiated the <code>onFilter</code> method. This method is triggered by the view&rsquo;s <code>filter</code> event.</p>
-
-<p>Upon filtering, we reset the view&rsquo;s filter function based on the current search keyword. The filter function matches the keyword against fields specified by the <code>filter_keys</code> options. If at least one match is found, the item is shown.</p>
-
-<h3>Views</h3>
-
-<p>The rest of the code is quite straightforward. We define our CollectionView and make it filterable with default <code>filter_keys</code>, like so:</p>
-
-<script src="https://gist.github.com/gracesusanchen/f6640993d2cc171f7230.js?file=ResultView.js"></script>
-
-
-<p>The ItemView here is very simple (<em>line 3~7</em> above). In a real life project, we can use its own event hash to bind user interactions.</p>
-
-<p>For our example, we are only interested in keyword changes. This event is handled by the main view, which is defined in the code below.</p>
-
-<script src="https://gist.github.com/gracesusanchen/f6640993d2cc171f7230.js?file=MainView.js"></script>
-
-
-<p>The main view listens <code>keyup</code> events on the search bar, and updates the dropdown menu by triggering <code>filter</code> events on the collection view.</p>
-
-<h2>Wrapping Up</h2>
-
-<p>For clarity, I have removed the code for highlighting in the above explanation, despite it a common feature in autocomplete. If you are interested in my implementation of highlighting, feel free to visit <a href="http://plnkr.co/9SX5OphViYSE1txQbEFR">the working example</a>.</p>
 
 	</section>
 
