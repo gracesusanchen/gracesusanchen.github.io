@@ -4,7 +4,7 @@
   <title><![CDATA[Grace S. Chen]]></title>
   <link href="http://gracesusanchen.github.io/atom.xml" rel="self"/>
   <link href="http://gracesusanchen.github.io/"/>
-  <updated>2015-07-27T23:37:27+08:00</updated>
+  <updated>2015-11-08T18:21:51+08:00</updated>
   <id>http://gracesusanchen.github.io/</id>
   <author>
     <name><![CDATA[Grace Chen]]></name>
@@ -12,6 +12,60 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[MOPCON 2015]]></title>
+    <link href="http://gracesusanchen.github.io/blog/2015/11/08/mopcon-2015/"/>
+    <updated>2015-11-08T17:55:56+08:00</updated>
+    <id>http://gracesusanchen.github.io/blog/2015/11/08/mopcon-2015</id>
+    <content type="html"><![CDATA[<p>經過了一個禮拜的沈澱，終於來寫 MOPCON 心得文囉～</p>
+
+<!-- More -->
+
+
+<p>這次會參與 MOPCON 志工，主要是因為去年當會眾時真的很熱血沸騰～而且拖前同事凍仁的福順利加入～</p>
+
+<h2>會前準備：</h2>
+
+<ul>
+<li>議程組的工作主要就是發信給講者，催繳資料，行前確認，官網資料更新與最後的主持工作。</li>
+<li>議程組裡最辛苦的絕對是凍仁組長了～雖然要做的事情都寫在 Trello 上，但最終大家都是等組長指示行動。我不知道留下今年的文件，對明年的議程組有沒有幫助，不過看起來辦活動是沒有 SOP 的。不知道有沒有什麼辦法可以把整理工作項目，與其他組長協調等等工作分配出去。</li>
+<li>發信給講者其實挺有趣的，因為英文專長分配到的下野回信超認真準時，合作愉快～（雖然他一直叫我 Mr. Grace orz）</li>
+</ul>
+
+
+<h2>會議當天：</h2>
+
+<ul>
+<li><p>很讚的：</p>
+
+<ol>
+<li>每一廳主持人安排兩位真的比較有壯膽效果啦～可以應付各種狀況，還有幫忙遞麥克風。</li>
+<li>閃電秀數量安排剛剛好，很快被搶完超有 fu :D</li>
+<li>Slack 頗好用，馬上知道有什麼需要宣導。</li>
+</ol>
+</li>
+<li><p>可改進的：</p>
+
+<ol>
+<li>主持人可以更了解講者，或者與講者事先串好招。
+
+<blockquote><p>部份講者的簡報中，有部份是自我介紹。可以再上台前，或者報到時確認是否需要協助介紹。如果有需要，也可以先與講者溝通好，需要介紹什麼重點。當然最美好的情況是主持人跟講者很熟～</p></blockquote></li>
+<li>主持人可宣傳 HackPad 用法：
+
+<blockquote><p>這次幫忙在 HackPad 上即時寫筆記，發現雖然登錄的人很多，但寫筆記速度不快。一問之下，才發現原來很多人不是不想做筆記，是因為使用中文輸入法，又與別人進行同一行編輯時，容易會被別人的輸入打斷。
+可以特別宣導，寫 HackPad 時可以與別人編輯不同行的文字。</p></blockquote></li>
+<li>聯播網路狀況不佳時，或許可以引導會眾看看 HackPad 紀錄。</li>
+</ol>
+</li>
+</ul>
+
+
+<h2>其他：</h2>
+
+<p>講者晚宴活動很棒，對於想與強者近距離接觸的我有很大收穫。不過我想如果有更多會眾來參加，可能就比較適合用「自助餐+大家自由移動」的方式，達到最大的 networking 效果 XD</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Autocomplete dropdown with MarionetteJS]]></title>
