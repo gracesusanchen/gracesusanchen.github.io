@@ -1,12 +1,7 @@
 ---
 layout: post
 title: "Adding separators to a Collection using Marionette"
-modified:
-categories: 
-excerpt:
 tags: ["marionette","separators","collection"]
-image:
-  feature:
 date: 2015-11-21T11:21:05+08:00
 ---
 
@@ -22,7 +17,7 @@ We want a collection which can be sorted by different attributes, and which uses
 
 As new items are inserted into the collection, the separator position will remain accurate.
 
-You can around with the demo [here](http://plnkr.co/t1TVR2D93mZDKMo9buXT).
+View the demo [here](http://plnkr.co/t1TVR2D93mZDKMo9buXT).
 
 ## Background: the CollectionView Lifecycle
 
@@ -42,20 +37,13 @@ We will do separator-related operations in the following three stages of the vie
 
 <script src="https://gist.github.com/gracesusanchen/d755b1c01b60543db8cf.js?file=collectionView.onAddChild.js"></script>
 
-Here we determine whether the currently added child should be preceded by a separator.
-
 * `onRender`: This method is triggered after the CollectionView is attached to the DOM. 
 
 <script src="https://gist.github.com/gracesusanchen/d755b1c01b60543db8cf.js?file=collectionView.onRender.js"></script>
 
-Once our CollectionView is in the DOM, we can use `$.prepend` to attach the 
-separators to where we want them to go.
-
 * `onBeforeRender`: This method is triggered before the CollectionView begins rendering. 
 
 <script src="https://gist.github.com/gracesusanchen/d755b1c01b60543db8cf.js?file=collectionView.onBeforeRender.js"></script>
-
-Here we clean up previously rendered separators.
 
 ## Caveats
 
