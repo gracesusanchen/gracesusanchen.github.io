@@ -50,7 +50,7 @@
 
 <p>As new items are inserted into the collection, the separator position will remain accurate.</p>
 
-<p>You can around with the demo <a href="http://plnkr.co/t1TVR2D93mZDKMo9buXT">here</a>.</p>
+<p>View the demo <a href="http://plnkr.co/t1TVR2D93mZDKMo9buXT">here</a>.</p>
 
 <h2>Background: the CollectionView Lifecycle</h2>
 
@@ -74,8 +74,6 @@
 <script src="https://gist.github.com/gracesusanchen/d755b1c01b60543db8cf.js?file=collectionView.onAddChild.js"></script>
 
 
-<p>Here we determine whether the currently added child should be preceded by a separator.</p>
-
 <ul>
 <li><code>onRender</code>: This method is triggered after the CollectionView is attached to the DOM.</li>
 </ul>
@@ -84,9 +82,6 @@
 <script src="https://gist.github.com/gracesusanchen/d755b1c01b60543db8cf.js?file=collectionView.onRender.js"></script>
 
 
-<p>Once our CollectionView is in the DOM, we can use <code>$.prepend</code> to attach the
-separators to where we want them to go.</p>
-
 <ul>
 <li><code>onBeforeRender</code>: This method is triggered before the CollectionView begins rendering.</li>
 </ul>
@@ -94,8 +89,6 @@ separators to where we want them to go.</p>
 
 <script src="https://gist.github.com/gracesusanchen/d755b1c01b60543db8cf.js?file=collectionView.onBeforeRender.js"></script>
 
-
-<p>Here we clean up previously rendered separators.</p>
 
 <h2>Caveats</h2>
 
