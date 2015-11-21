@@ -4,7 +4,7 @@
   <title><![CDATA[Category: tutorial | Grace S. Chen]]></title>
   <link href="http://gracesusanchen.github.io/blog/categories/tutorial/atom.xml" rel="self"/>
   <link href="http://gracesusanchen.github.io/"/>
-  <updated>2015-11-08T18:21:51+08:00</updated>
+  <updated>2015-11-21T16:53:50+08:00</updated>
   <id>http://gracesusanchen.github.io/</id>
   <author>
     <name><![CDATA[Grace Chen]]></name>
@@ -18,12 +18,12 @@
     <link href="http://gracesusanchen.github.io/blog/2015/06/24/autocomplete-dropdown-with-marionettejs/"/>
     <updated>2015-06-24T21:27:37+08:00</updated>
     <id>http://gracesusanchen.github.io/blog/2015/06/24/autocomplete-dropdown-with-marionettejs</id>
-    <content type="html"><![CDATA[<p>Marionette is a Backbone.js library which includes a number of useful extended views. In this article, I will use Marionette.CollectionView to build an autocomplete dropdown menu with rich user interactions.</p>
+    <content type="html"><![CDATA[<p>In this article, I will create <a href="https://twitter.github.io/typeahead.js/">typeahead</a> style dropdown using MarionetteJS.</p>
 
 <!-- More -->
 
 
-<p><strong>Note</strong>: For more information on Marionette, I recommend starting with Ben McCormick&rsquo;s excellent introduction <a href="http://benmccormick.org/2014/12/02/the-case-for-marionette-js/">here</a>.</p>
+<p><strong>Note</strong>: Marionette is a Backbone.js library which includes a number of useful extended views. For more information on Marionette, I recommend starting with Ben McCormick&rsquo;s excellent introduction <a href="http://benmccormick.org/2014/12/02/the-case-for-marionette-js/">here</a>.</p>
 
 <h2>Why use Marionette?</h2>
 

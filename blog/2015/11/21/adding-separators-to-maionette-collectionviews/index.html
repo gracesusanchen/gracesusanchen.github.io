@@ -1,0 +1,181 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta charset="utf-8">
+	<title>Adding separators to a Collection using Marionette | Grace S. Chen</title>
+
+	<meta name="author" content="Grace Chen">
+	
+	<meta name="description" content="Marionette tutorials for building UI components.">
+  
+  <meta name="keywords" content="marionette,backbone,frontend,web">
+
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link href="/atom.xml" rel="alternate" title="Grace S. Chen" type="application/atom+xml">
+	<link rel="canonical" href="">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Open+Sans:700,400" />
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/.min.css" />
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+
+<body class="post-template">
+  <main class="content" role="main"><article class="post">
+  
+	<header class="post-header">
+		<a id="blog-logo" href="/">Grace S. Chen</a>
+	</header>
+	<span class="post-meta">21 Nov 2015</span>
+	<h1 class="post-title">Adding Separators to a Collection Using Marionette</h1>
+
+	<section class="post-content">
+		<p><a href="https://www.google.com/design/spec/components/dividers.html#dividers-specs">Separators, or dividers,</a> can make content more accessible by spacing it out.</p>
+
+<!-- More -->
+
+
+<p>While Backbone.Marionette is ideal for rendering a collection of identical views, it is not as easy to insert separators between these. This post will describe how add separators between ItemViews.</p>
+
+<h2>The Goal</h2>
+
+<p>We want a collection which can be sorted by different attributes, and which uses corresponding separators depending on the current sort order.</p>
+
+<p>As new items are inserted into the collection, the separator position will remain accurate.</p>
+
+<p>You can around with the demo <a href="http://plnkr.co/t1TVR2D93mZDKMo9buXT">here</a>.</p>
+
+<h2>Background: the CollectionView Lifecycle</h2>
+
+<p>The Marionette library defines the <a href="http://benmccormick.org/2015/01/05/marionette-view-life-cycles/">lifecycle and triggers</a> for each view types. Below is a simplified diagram of the lifecycle of a CollectionView.</p>
+
+<p><img src="/images/201511Lifecycle.png"></p>
+
+<p>The CollectionView has a <em>buffering mechanism</em>; ChildViews HTML strings are buffered until all children are &ldquo;rendered&rdquo; as strings.</p>
+
+<p>When the entire CollectionView HTML string is ready, the buffer is attached to the DOM in one go. This makes collection rendering much more efficient.</p>
+
+<h2>Walkthrough</h2>
+
+<p>We will do separator-related operations in the following three stages of the view&rsquo;s lifecycle.</p>
+
+<ul>
+<li><code>onAddChild</code>: This method is triggered when a new ItemView is rendered and added to the buffer.</li>
+</ul>
+
+
+<script src="https://gist.github.com/gracesusanchen/d755b1c01b60543db8cf.js?file=collectionView.onAddChild.js"></script>
+
+
+<p>Here we determine whether the currently added child should be preceded by a separator.</p>
+
+<ul>
+<li><code>onRender</code>: This method is triggered after the CollectionView is attached to the DOM.</li>
+</ul>
+
+
+<script src="https://gist.github.com/gracesusanchen/d755b1c01b60543db8cf.js?file=collectionView.onRender.js"></script>
+
+
+<p>Once our CollectionView is in the DOM, we can use <code>$.prepend</code> to attach the
+separators to where we want them to go.</p>
+
+<ul>
+<li><code>onBeforeRender</code>: This method is triggered before the CollectionView begins rendering.</li>
+</ul>
+
+
+<script src="https://gist.github.com/gracesusanchen/d755b1c01b60543db8cf.js?file=collectionView.onBeforeRender.js"></script>
+
+
+<p>Here we clean up previously rendered separators.</p>
+
+<h2>Caveats</h2>
+
+<p>To use the method described above, the CollectionView must be re-rendered on sort. Hence, the <code>reorderOnSort</code> option has be <code>false</code>, and this will have a slight impact on your rendering performance.</p>
+
+<p>If your collection view will not be filtered or sorted, then it may be worth adding your separator logic to your models, and only update the models on <code>add</code> or <code>remove</code> events.</p>
+
+	</section>
+
+  <footer class="post-footer">
+  <section class="author">
+    <h4>Grace Chen</h4>
+    <p></p>
+  </section>
+  <section class="share">
+    <h4>Share this post</h4>
+    <a class="icon-twitter" href="http://twitter.com/share?text=Adding separators to a Collection using Marionette&amp;url=http://gracesusanchen.github.io/blog/2015/11/21/adding-separators-to-maionette-collectionviews/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+    </a>
+    <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://gracesusanchen.github.io/blog/2015/11/21/adding-separators-to-maionette-collectionviews/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+    </a>
+    <a class="icon-google-plus" href="https://plus.google.com/share?url=http://gracesusanchen.github.io/blog/2015/11/21/adding-separators-to-maionette-collectionviews/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+    </a>
+  </section>
+</footer>
+  <hr>
+  
+    <div class="share">
+</div>
+
+  
+  
+</article></main>
+  <footer class="site-footer"><a class="subscribe icon-feed" href="http://gracesusanchen.github.io/atom.xml"><span class="tooltip">Subscribe!</span></a>
+
+
+<div class="inner">
+
+
+Follow me on
+
+
+
+<a class="social twitter" href="http://twitter.com/gracesusanchen" title="Twitter">Twitter</a>
+
+
+
+<a class="social github" href="http://github.com/gracesusanchen" title="GitHub">GitHub</a>
+
+
+
+
+<section class="copyright">All content copyright <a href="/">Grace Chen</a> © 2015 • All rights reserved • Photo credit: <a href="https://ello.co/kappuru">@kapurru</a></section>
+
+<section class="poweredby">Casper theme by <a class="icon-ghost" href="http://tryghost.org">Ghost</a> &amp; Published with <a href="http://octopress.org">Octopress</a>.</section>
+
+</div>
+</footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+
+
+
+
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-65699717-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+</body>
+</html>
