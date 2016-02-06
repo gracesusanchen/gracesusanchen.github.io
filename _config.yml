@@ -4,11 +4,13 @@
 
 url: http://gracesusanchen.github.io
 title: Grace S. Chen
-subtitle: 
 author: Grace Chen
 simple_search: https://www.google.com/search
-description: Marionette tutorials for building UI components.
-keywords: marionette,backbone,frontend,web
+description: 'Mostly about web development, but has some other knicknacks too'
+keywords: marionette,backbone,frontend,web,technology,development
+navigation:
+#- name: 'About'
+#  url: 'about.html'
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in

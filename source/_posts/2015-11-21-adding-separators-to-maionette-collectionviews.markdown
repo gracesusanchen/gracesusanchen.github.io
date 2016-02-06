@@ -9,7 +9,7 @@ date: 2015-11-21T11:21:05+08:00
 
 <!-- More -->
 
-While Backbone.Marionette is ideal for rendering a collection of identical views, it is not as easy to insert separators between these. This post will describe how add separators between ItemViews.
+While Backbone.Marionette is ideal for rendering a collection of identical views, it is not as easy to insert separators between these. This post will describe how to add separators between ItemViews.
 
 ## The Goal
 
