@@ -1,0 +1,171 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta charset="utf-8">
+	<title>How to Collect Wallpapers like a Pro | Grace S. Chen</title>
+
+	<meta name="author" content="Grace Chen">
+	
+	<meta name="description" content="Mostly about web development, but has some other knicknacks too">
+  
+  <meta name="keywords" content="marionette,backbone,frontend,web,technology,development">
+
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link href="/atom.xml" rel="alternate" title="Grace S. Chen" type="application/atom+xml">
+	<link rel="canonical" href="">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Open+Sans:700,400" />
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/.min.css" />
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+
+<body class="post-template">
+  <main class="content" role="main"><article class="post">
+  
+	<header class="post-header">
+		<a id="blog-logo" href="/">Grace S. Chen</a>
+	</header>
+	<span class="post-meta">06 Feb 2016</span>
+	<h1 class="post-title">How to Collect Wallpapers Like a Pro</h1>
+
+	<section class="post-content">
+		<p>Once in a while, I find my current wallpaper collection lacking&hellip;</p>
+
+<!--more-->
+
+
+<p>&hellip; and I set out to find a new one.</p>
+
+<p><img src="/images/201512browsing.jpg"></p>
+
+<p>Half an hour later, I&rsquo;ve finally got a new wallpaper! But that is half an hour more than I meant to spend on this!</p>
+
+<p>And I thought, <em>Wouldn&rsquo;t it be nice to have wallpapers pop up at my proverbial doorstep?</em></p>
+
+<p>With the help of <a href="http://ifttt.com">IFTTT</a>, <a href="http://melloristudio.com/wallch/">wallch</a>, and some bash scripting, I have managed to solve this problem on Ubuntu and Xubuntu.</p>
+
+<h2>How it works</h2>
+
+<p>IFTTT automatically saves updates from my favourite wallpaper sources to my local wallpaper folder. When new images come up in the wallpaper slideshow, I can decide to keep or delete them as I please!</p>
+
+<h2>You will need&hellip;</h2>
+
+<ul>
+<li>an <a href="http://ifttt.com">IFTTT</a> account</li>
+<li>a <a href="http://dropbox.com">Dropbox</a> account</li>
+<li>a list of subreddits (such as <a href="https://www.reddit.com/r/EarthPorn/">/r/earthporn</a>)</li>
+</ul>
+
+
+<h2>Follow these steps</h2>
+
+<p><em>Step 1</em>: Add a folder to your Dropbox for your wallpapers; make sure it is synced to your machine.</p>
+
+<p><em>Step 2</em>: Create your own IFTTT recipes, similar to the one below.</p>
+
+<p><img src="/images/201512ifttt.png"></p>
+
+<p><em>Step 3</em>: Set your wallpaper rotation folder to your Dropbox folder. (<a href="http://www.switchingtomac.com/tutorials/how-to-rotate-wallpapers-in-osx/">Mac</a>|<a href="http://windows.microsoft.com/en-us/windows7/create-a-desktop-background-slide-show">Win</a>|<a href="http://melloristudio.com/wallch/">Gnome</a>)</p>
+
+<p>And that&rsquo;s it!</p>
+
+<h2>Managing Wallpapers</h2>
+
+<p>Once I had this system up and running, I quickly amassed many, many wallpapers. They become slightly problematic to organize with only system tools. (Loading thousands of HD wallpaper thumbnails is slow, to say the least.)</p>
+
+<p>For removal of duplicates and images that are too small, I use my <a href="https://github.com/gracesusanchen/wallpaper-trimmer">wallpaper-trimmer</a> script.</p>
+
+<h2>Access the Current Wallpaper</h2>
+
+<p>Sometimes, I want to find out where the current wallpaper is located, without having to turn on the desktop settings, because, again, loading thousands of wallpaper thumbnails is sloooow.</p>
+
+<p>Here are a few ways to access the current desktop image path:</p>
+
+<p><em>On Ubuntu</em>: Install <a href="http://melloristudio.com/wallch/">wallch</a>!</p>
+
+<p><em>On Xubuntu</em>: Use <a href="https://github.com/gracesusanchen/current-xfce-desktop/">this script</a>.</p>
+
+	</section>
+
+  <footer class="post-footer">
+  <section class="author">
+    <h4>Grace Chen</h4>
+    <p></p>
+  </section>
+  <section class="share">
+    <h4>Share this post</h4>
+    <a class="icon-twitter" href="http://twitter.com/share?text=How to Collect Wallpapers like a Pro&amp;url=http://gracesusanchen.github.io/blog/2016/02/06/how-to-collect-wallpapers-like-a-pro/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+    </a>
+    <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://gracesusanchen.github.io/blog/2016/02/06/how-to-collect-wallpapers-like-a-pro/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+    </a>
+    <a class="icon-google-plus" href="https://plus.google.com/share?url=http://gracesusanchen.github.io/blog/2016/02/06/how-to-collect-wallpapers-like-a-pro/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+    </a>
+  </section>
+</footer>
+  <hr>
+  
+    <div class="share">
+</div>
+
+  
+  
+</article></main>
+  <footer class="site-footer"><a class="subscribe icon-feed" href="http://gracesusanchen.github.io/atom.xml"><span class="tooltip">Subscribe!</span></a>
+
+
+<div class="inner">
+
+
+Follow me on
+
+
+
+<a class="social twitter" href="http://twitter.com/gracesusanchen" title="Twitter">Twitter</a>
+
+
+
+<a class="social github" href="http://github.com/gracesusanchen" title="GitHub">GitHub</a>
+
+
+
+
+<section class="copyright">All content copyright <a href="/">Grace Chen</a> © 2016 • All rights reserved • Photo credit: <a href="https://ello.co/kappuru">@kapurru</a></section>
+
+<section class="poweredby">Casper theme by <a class="icon-ghost" href="http://tryghost.org">Ghost</a> &amp; Published with <a href="http://octopress.org">Octopress</a>.</section>
+
+</div>
+</footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+
+
+
+
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-65699717-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+</body>
+</html>

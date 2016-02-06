@@ -4,7 +4,7 @@
   <title><![CDATA[Grace S. Chen]]></title>
   <link href="http://gracesusanchen.github.io/atom.xml" rel="self"/>
   <link href="http://gracesusanchen.github.io/"/>
-  <updated>2015-11-21T17:00:22+08:00</updated>
+  <updated>2016-02-06T14:40:20+08:00</updated>
   <id>http://gracesusanchen.github.io/</id>
   <author>
     <name><![CDATA[Grace Chen]]></name>
@@ -12,6 +12,69 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to Collect Wallpapers like a Pro]]></title>
+    <link href="http://gracesusanchen.github.io/blog/2016/02/06/how-to-collect-wallpapers-like-a-pro/"/>
+    <updated>2016-02-06T14:36:29+08:00</updated>
+    <id>http://gracesusanchen.github.io/blog/2016/02/06/how-to-collect-wallpapers-like-a-pro</id>
+    <content type="html"><![CDATA[<p>Once in a while, I find my current wallpaper collection lacking&hellip;</p>
+
+<!--more-->
+
+
+<p>&hellip; and I set out to find a new one.</p>
+
+<p><img src="http://gracesusanchen.github.io/images/201512browsing.jpg"></p>
+
+<p>Half an hour later, I&rsquo;ve finally got a new wallpaper! But that is half an hour more than I meant to spend on this!</p>
+
+<p>And I thought, <em>Wouldn&rsquo;t it be nice to have wallpapers pop up at my proverbial doorstep?</em></p>
+
+<p>With the help of <a href="http://ifttt.com">IFTTT</a>, <a href="http://melloristudio.com/wallch/">wallch</a>, and some bash scripting, I have managed to solve this problem on Ubuntu and Xubuntu.</p>
+
+<h2>How it works</h2>
+
+<p>IFTTT automatically saves updates from my favourite wallpaper sources to my local wallpaper folder. When new images come up in the wallpaper slideshow, I can decide to keep or delete them as I please!</p>
+
+<h2>You will need&hellip;</h2>
+
+<ul>
+<li>an <a href="http://ifttt.com">IFTTT</a> account</li>
+<li>a <a href="http://dropbox.com">Dropbox</a> account</li>
+<li>a list of subreddits (such as <a href="https://www.reddit.com/r/EarthPorn/">/r/earthporn</a>)</li>
+</ul>
+
+
+<h2>Follow these steps</h2>
+
+<p><em>Step 1</em>: Add a folder to your Dropbox for your wallpapers; make sure it is synced to your machine.</p>
+
+<p><em>Step 2</em>: Create your own IFTTT recipes, similar to the one below.</p>
+
+<p><img src="http://gracesusanchen.github.io/images/201512ifttt.png"></p>
+
+<p><em>Step 3</em>: Set your wallpaper rotation folder to your Dropbox folder. (<a href="http://www.switchingtomac.com/tutorials/how-to-rotate-wallpapers-in-osx/">Mac</a>|<a href="http://windows.microsoft.com/en-us/windows7/create-a-desktop-background-slide-show">Win</a>|<a href="http://melloristudio.com/wallch/">Gnome</a>)</p>
+
+<p>And that&rsquo;s it!</p>
+
+<h2>Managing Wallpapers</h2>
+
+<p>Once I had this system up and running, I quickly amassed many, many wallpapers. They become slightly problematic to organize with only system tools. (Loading thousands of HD wallpaper thumbnails is slow, to say the least.)</p>
+
+<p>For removal of duplicates and images that are too small, I use my <a href="https://github.com/gracesusanchen/wallpaper-trimmer">wallpaper-trimmer</a> script.</p>
+
+<h2>Access the Current Wallpaper</h2>
+
+<p>Sometimes, I want to find out where the current wallpaper is located, without having to turn on the desktop settings, because, again, loading thousands of wallpaper thumbnails is sloooow.</p>
+
+<p>Here are a few ways to access the current desktop image path:</p>
+
+<p><em>On Ubuntu</em>: Install <a href="http://melloristudio.com/wallch/">wallch</a>!</p>
+
+<p><em>On Xubuntu</em>: Use <a href="https://github.com/gracesusanchen/current-xfce-desktop/">this script</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Adding separators to a Collection using Marionette]]></title>
@@ -23,7 +86,7 @@
 <!-- More -->
 
 
-<p>While Backbone.Marionette is ideal for rendering a collection of identical views, it is not as easy to insert separators between these. This post will describe how add separators between ItemViews.</p>
+<p>While Backbone.Marionette is ideal for rendering a collection of identical views, it is not as easy to insert separators between these. This post will describe how to add separators between ItemViews.</p>
 
 <h2>The Goal</h2>
 
